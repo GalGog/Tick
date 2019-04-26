@@ -1,0 +1,63 @@
+ .cont{
+     width: 80%;
+    position: relative;
+    margin-left: 10%;
+}
+
+.content-upp {
+    margin-left: 3%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 576px) {
+    .content-upp {
+        width: 23%;
+        margin-right:  5%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .content-upp {
+        width: 70%;
+        margin-left: 3%;
+    }
+}
+
+
+
+ .container{
+     position:relative;
+
+ }
+.btn{
+    position: relative;
+    z-index: 1;
+}
+.transparent{
+    position: relative;
+    z-index: 1;
+}
+.btn{
+    position: absolute;
+    z-index: 2;
+    top: 44px;
+    display: none;
+    left: 59px;
+}
+.transparent{
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    display: none;
+    left: -2px;
+    width: 260px;
+    height: 250px;
+    margin: 5% auto;
+}
+.container:hover .btn{
+    display:block;
+}
+.container:hover .transparent{
+    display: block;
+    background-color:rgba(46,49,49,0.9);
+
+}
